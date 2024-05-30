@@ -1,11 +1,3 @@
-> [!IMPORTANT]
-> This project is part of the [DevOpsTheHardWay][DevOpsTheHardWay] course. Please [onboard the course][onboarding_tutorial] before starting. 
-> 
-> The project builds upon the concepts covered in our [previous Docker project][PolybotServiceDocker].
-> To make ensure a smooth learning experience, we recommend completing the Docker project first. 
-
-
-
 # The Polybot Service: AWS Project
 
 ## Background and goals
@@ -30,8 +22,6 @@ You'll utilize the majority of the AWS resources covered in the tutorials, inclu
    Change `<your-username>` and `<your-project-repo-name>` according to your GitHub username and the name you gave to your fork. E.g. `git clone https://github.com/johndoe/PolybotServiceAWS`.
 3. Open the repo as a code project in your favorite IDE (Pycharm, VSCode, etc..).
    It is also a good practice to create an isolated Python virtual environment specifically for your project ([see here how to do it in PyCharm](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html)).
-4. This project involves working with many AWS services.
-   Note that you are responsible for the costs of any resources you create. You'll mainly pay for 2-4 EC2 instances and Application Load Balancer. If you work properly, the cost estimation is **35 USD** for a month, assuming your instances are running for 8 hours a day for a whole month (the project can be completed in much less than a month. You can, and must, stop you instances and delete the ALB at the end of usage to avoid additional charges).
 
 Later on, you are encouraged to change the `README.md` file content to provide relevant information about your service project.
 
@@ -119,14 +109,6 @@ Test your CI/CD pipline for both the Polybot and Yolo5 microservices.
 
 TBD - There is no any submission method for that project right now.
 
-### Share your project 
-
-You are highly encourages to share your project with others by creating a **Pull Request**.
-
-Create a Pull Request from your repo, branch `main` (e.g. `johndoe/PolybotServiceAWS`) into our project repo (i.e. `alonitac/PolybotServiceAWS`), branch `main`.  
-Feel free to explore other's pull requests to discover different solution approaches.
-
-As it's only an exercise, we may not approve your pull request (approval would lead your changes to be merged into our original project). 
 
 
 # Good Luck
