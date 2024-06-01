@@ -53,8 +53,7 @@ Let's get started...
   
     Or 
 
-  - [Register a real domain using Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) (`.click` is one of the cheapest). After registering your domain, in the domain's **Hosted Zone** you should create a subdomain **A alias record** that routes traffic to your ALB. In addition, you need to request a **public certificate** for your domain address, since the domain has been issued by Amazon, issuing a certificate [can be easily done with AWS Certificate Manager (ACM)](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html#request-public-console). 
-
+  - Create a subdomain in our shared registered domain. In the domain's Hosted Zone, create an **A alias record** that routes traffic to your ALB. In addition, you need to request a public certificate for your domain address. Since the domain has been issued by Amazon, issuing a certificate [can be easily done with AWS Certificate Manager (ACM)](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html#request-public-console).
 - [Read Telegram's webhook docs](https://core.telegram.org/bots/webhooks) to get the CIDR of Telegram servers. Since your ALB is publicly accessible, it's better to restrict incoming traffic access to the ALB exclusively to Telegram servers by applying inbound rules to the **Security Group**.
 - Your Telegram token is a sensitive data. It should be stored in [AWS Secret Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html). Create a corresponding secret in Secret Manager, under **Secret type** choose **Other type of secret**.
 - Tip: It's recommended to tag your Polybot instances, so they can be identified during the CI/CD pipline that you'll implement later. E.g. `APP=john-polybot`.
@@ -107,7 +106,11 @@ Test your CI/CD pipline for both the Polybot and Yolo5 microservices.
 
 ## Submission
 
-TBD - There is no any submission method for that project right now.
+You have to present your work to the course staff, in a **10-15 minutes demo**. Your presentations would be evaluated according to the below list, in order of priority:
+
+1. Showcasing a live, working demo of your work.
+2. Demonstrating deep understanding.
+3. Applying best practices and clean work.
 
 
 
